@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lovenson Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="header">
+        <div class="logo-box">
+            <h1 class="logo">LB.</h1>
+        </div>
+
+        <nav class="nav-container" id="nav-container">
+            <div class="nav-link-wrapper">
+                <img src="./images/home.png" class="nav-link-img">
+                <a href="" class="nav-link">Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <img src="./images/user.png" class="nav-link-img">
+                <a href="" class="nav-link">About</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <img src="./images/coding.png" class="nav-link-img">
+                <a href="" class="nav-link">Projects</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <img src="./images/document.png" class="nav-link-img">
+                <a href="" class="nav-link">Contact</a>
+            </div>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+
+        </div>
+    </div>
+
+    <!-- HERO-SECTION -->
+
+    <div class="hero-container">
+
+        <div class="text">
+            <h2 class="name-heading">Hi, I'm Lovenson </h2>
+            <h1 class="main-heading">I am a <span class="my-title"></span></h1>
+            <p class="my-details">I am from Haiti. I am a computer science student and front-end web developer. I
+                currently live in Taiwan and I'm learning full-stack web development. Are you building things for the
+                web ? Feel free to reach out</p>
+        </div>
+
+        <div class="button">
+            <a class="primary-btn" href="/resume-Lovenson-Beaucicot.pdf">Download CV</a>
+        </div>
+    </div>
+    
+<!-- HANDLING TYPING ANIMATION -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        const typed = new Typed(".my-title", {
+            strings: ["Developer", "Designer", "Student"],
+            typeSpeed: 180,
+            backSpeed: 180,
+            backDelay: 400,
+            loop: true
+        });
+    </script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
