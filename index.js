@@ -11,6 +11,54 @@ sr.reveal(".nav-link-wrapper", {
   mobile: false
 });
 
+
+//Animating the hero-section
+sr.reveal(".hero-container", {
+    delay: 2000,
+    duration: 1500,
+    distance: "50px",
+    interval: 400,
+    easing: 'ease-in',
+    mobile: false
+});
+
+sr.reveal(".hero-container", {
+    delay: 300,
+    duration: 2000,
+    distance: "50px",
+    interval: 400,
+    mobile: true,
+    easing: 'ease-out',
+    desktop: false
+});
+
+sr.reveal(".about-me", {
+    delay: 600,
+    duration: 1000,
+    distance: "70px",
+    origin: "left",
+    interval: 400,
+    mobile: true,
+    viewFactor: 0.9,
+    easing: 'ease-out',
+});
+
+sr.reveal(".about-photo", {
+    delay: 600,
+    duration: 1000,
+    distance: "70px",
+    interval: 400,
+    origin: "right",
+    mobile: true,
+    easing: 'ease-out',
+    viewFactor: 0.4,
+    
+ 
+});
+
+
+
+
 //Making the Nav Bar Responsive
 
 const navContainer = document.getElementById("nav-container");
