@@ -103,5 +103,16 @@ sr.reveal(".about-photo", {
  
 });
 
+sr.reveal(".project", {
+    delay: 200,
+    duration: 1000,
+    distance: "70px",
+    interval: 400,
+    mobile: true,
+    easing: 'ease-out',
+    viewFactor: 0.4,
+ 
+});
+
 
 
