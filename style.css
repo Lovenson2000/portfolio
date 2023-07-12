@@ -522,12 +522,16 @@ body {
 }
 
 .project:hover {
-    transform: translateY(-.2rem) scale(1.02);
+    transform: translateY(-.2rem) scale(1.1);
 }
 
 .project-image i {
-    font-size: 6rem;
+    font-size: 5rem;
     color: var(--dark-grey);
+    margin-left: 1rem;
+}
+.project-image i:hover {
+    color: var(--main-green);
 }
 
 .project-details {
@@ -546,10 +550,19 @@ body {
     font-weight: 100;
     word-spacing: 3px;
 }
+.project.todo {
+    padding: 3rem; 
+}
+.project.pet {
+    padding: 2.4rem;
+}
+.project.weather {
+    padding: 1.5rem;
+}
 
 .project-links {
     position: absolute;
-    bottom: 1.5rem;
+    bottom: 1rem;
     right: 1.5rem;
     display: flex;
     gap: 1rem;
