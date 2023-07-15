@@ -808,7 +808,35 @@ body {
         max-width: 21rem;
     }
 }
-@media (max-width: 22rem) {
+@media (max-width: 23rem) {
+    .form-container {
+        max-width: 18.5rem;
+    }
+    .form input[name="name"] {
+        padding: .6rem 1rem;
+        margin: .5rem .2rem;     
+    }
+    .form input[name="email"] {
+        padding: .6rem 1rem;
+        margin: .5rem .2rem;   
+
+    }
+    .form textarea {
+        padding: .8rem 1rem;
+        margin: 0rem;
+        width: 14.5rem;   
+    }
+    .form button {
+     
+        margin: 2rem auto;
+        font-size: 1.1rem;
+        padding: .7rem 2.5rem;
+        
+    }
+    
+}
+
+@media (max-width: 21rem) {
     .form-container {
         max-width: 18rem;
     }
