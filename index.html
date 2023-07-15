@@ -140,25 +140,6 @@
                 </div>
             </div>
 
-            <div class="project todo">
-                <div class="project-image">
-                    <i class="fa-sharp fa-regular fa-list-check"></i>
-                </div>
-    
-                <div class="project-details">
-                    <h2 class="project-name">Todo List</h2>
-                    <p>Languages: <span>HTML, CSS, Javascript</span></p>
-                    <p>Libraries: <span> None</span>
-                    </p>
-                    <p>Tools: <span>VS Code, Netlify, Git/Github</span></p>  
-                </div>
-    
-                <div class="project-links">
-                    <a href="https://github.com/Lovenson2000/todoApp"><i class="fa-brands fa-github fa-2xl"></i></a>
-                    <a href="https://myfuntodoapp.netlify.app"><i class="fa-solid fa-link fa-lg"></i></a>   
-                </div>
-            </div>
-
             <div class="project">
                 <div class="project-image">
                     <i class="fa-sharp fa-regular fa-hands-praying"></i>
@@ -186,7 +167,7 @@
                 <div class="project-details">
                     <h2 class="project-name">Pet Adoption Website</h2>
                     <p>Languages: <span>HTML, CSS, Javascript</span></p>
-                    <p>Libraries: <span> intersectionObserver</span>
+                    <p>Library: <span> intersectionObserver</span>
                     </p>
                     <p>Tools: <span>VS Code, Vercel, Git/Github</span></p>  
                 </div>
@@ -197,7 +178,7 @@
                 </div>
             </div>
 
-            <div class="project weather">
+            <div class="project weather showMore">
                 <div class="project-image">
                     <i class="fa-solid fa-cloud-arrow-up"></i> 
                 </div>
@@ -205,7 +186,7 @@
                 <div class="project-details">
                     <h2 class="project-name">Weather App</h2>
                     <p>Languages: <span>HTML, CSS, Javascript</span></p>
-                    <p>Libraries: <span>OpenWeatherMap Api </span>
+                    <p>Library: <span>OpenWeatherMap Api </span>
                     </p>
                     <p>Tools: <span>VS Code, Netlify, Git/Github</span></p>  
                 </div>
@@ -215,8 +196,75 @@
                     <a href="https://myweatherappapi.netlify.app"><i class="fa-solid fa-link fa-lg"></i></a>   
                 </div>
             </div>
+
+            <div class="project todo showMore">
+                <div class="project-image">
+                    <i class="fa-sharp fa-regular fa-list-check"></i>
+                </div>
+    
+                <div class="project-details">
+                    <h2 class="project-name">Todo List</h2>
+                    <p>Languages: <span>HTML, CSS, Javascript</span></p>
+                    <p>Libraries: <span> None</span>
+                    </p>
+                    <p>Tools: <span>VS Code, Netlify, Git/Github</span></p>  
+                </div>
+    
+                <div class="project-links">
+                    <a href="https://github.com/Lovenson2000/todoApp"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="https://myfuntodoapp.netlify.app"><i class="fa-solid fa-link fa-lg"></i></a>   
+                </div>
+            </div>
+
+            <div class="project showMore">
+                <div class="project-image">
+                    <i class="fa-sharp fa-regular fa-list-check"></i>
+                </div>
+    
+                <div class="project-details">
+                    <h2 class="project-name">Note Taking App</h2>
+                    <p>Languages: <span>HTML, CSS, Javascript</span></p>
+                    <p>Library: <span> FontAwesome</span>
+                    </p>
+                    <p>Tools: <span>VS Code, Netlify, Git/Github</span></p>  
+                </div>
+    
+                <div class="project-links">
+                    <a href="https://github.com/Lovenson2000/noteApp"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="https://funnoteapp.netlify.app"><i class="fa-solid fa-link fa-lg"></i></a>   
+                </div>
+            </div>
         </div>
 
+    </div>
+
+    <div class="showbutton">
+        <a href="#" class="show-btn" id="show-btn">Show more</a>
+    </div>
+
+    <div class="form-section">
+        <div class="form-container">
+            <div class="form-head">
+                <h3>Send me a message</h3>
+                <p>Are you building things for the web ? Do you need someone to <span>bring your ideas to life</span> ?
+                    Feel free to send me a message.
+                </p>
+            </div>
+            <form class="form" action="https://formsubmit.co/beaucicotlovenson@gmail.com" method="POST">
+                
+                <h3>Name</h3>
+                <input type="text" name="name" placeholder="eg.. Roger Miller" required>
+                <h3>Email address</h3>
+                <input type="email" name="email" placeholder="rogermiller@email.com" required>
+
+                <h3>Message</h3>
+                <textarea name="message" cols="22.5" rows="5" placeholder="Type your message..." required></textarea>
+                
+                <button type="submit" id="message-btn" class="message-btn">Send message</button>
+                
+           </form>
+            
+        </div>
     </div>
 
 
@@ -232,7 +280,6 @@
             loop: true
         });
     </script>
-
 
     <script src="index.js"></script>
 </body>

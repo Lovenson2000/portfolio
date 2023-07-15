@@ -541,15 +541,19 @@ body {
 .project-details h2 {
     color: var(--light-white);
     padding-block: 1rem;
+    font-family: 'Francois One', sans-serif;
+    
 
 }
 
 .project-details p {
     padding-block: .5rem;
     font-size: .9rem;
-    font-weight: 100;
+    font-weight: 300;
     word-spacing: 3px;
+    font-family: var(--font-slim);
 }
+
 .project.todo {
     padding: 3rem; 
 }
@@ -640,4 +644,197 @@ body {
         padding-block: .5rem;
         font-size: 1rem;
     }
+}
+.showMore {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.showbutton {
+    text-align: center;
+    margin: 5rem 2rem;
+}
+
+.show-btn {
+    font-family: var(--font-slim);
+    font-weight: 300;
+    text-decoration: none;
+    padding: .9rem 3rem;
+    background: transparent;
+    color: var(--main-green);
+    border-radius: 2px;
+    box-shadow: 2px 2px 1px 3px var(--main-green);
+
+}
+
+/* STYLING THE FORM  SECTION */
+
+.form-section {
+    display: flex;
+    justify-content: center;
+
+}
+
+.form-container {
+    border-radius: 4px;
+    margin: 2rem;
+    padding: 2rem;
+    max-width: 30rem;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-color: #021e43;
+    gap: 2rem;
+
+}
+.form-head {
+    font-family: 'Francois One', sans-serif;
+}
+
+.form-head h3 {
+    color: var(--light-white);
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+}
+
+.form-head p {
+    font-weight: 400;
+    font-family: var(--font-slim);
+    color: var(--dark-grey);
+    letter-spacing: 1px;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.form-head span {
+    color: var(--main-green);
+}
+
+.form h3 {
+    color: var(--dark-grey);
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-family: 'Francois One', sans-serif;
+    
+}
+
+.form input[name="name"] {
+    background-color: var(--dark-grey);
+    padding: .6rem 2rem;
+    font-size: 1rem;
+    color: var(--mainBackgroundColor);
+    border-radius: 2px;
+    outline: none;
+    border-style: none;
+    margin: .5rem;
+    transition: all .2s linear;
+    
+}
+
+.form input[name="email"] {
+    background-color: var(--dark-grey);
+    padding: .6rem 2rem;
+    font-size: 1rem;
+    color: var(--mainBackgroundColor);
+    border-radius: 2px;
+    outline: none;
+    border-style: none;
+    margin: .5rem;
+    transition: all .2s linear;
+
+}
+
+
+.form input::placeholder {
+    color: var(--mainBackgroundColor);
+    font-size: .8rem;
+}
+
+.form textarea {
+    background-color: var(--dark-grey);
+    outline: none;
+    border-radius: 2px;
+    border: none; 
+    font-size: 1rem;
+    padding: .8rem 1rem;
+    margin: .5rem;
+    resize: none;
+    transition: all .2s linear;
+    
+}
+
+.form textarea::placeholder {
+    color: var(--mainBackgroundColor);
+    font-size: .8rem;
+}
+
+.form input:focus, textarea:focus-within {
+    border-style: none;
+    border-bottom: 3px solid var(--main-green);
+    overflow: hidden;
+
+}
+
+.form button {
+    display:flex;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    background-color: var(--light-white);
+    color: var(--mainBackgroundColor);
+    border-radius: 40px;
+    padding: .7rem 4rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.form button:hover {
+    background-color: var(--mainBackgroundColor);
+    color: var(--main-green);
+}
+/* MAKING THE FORM RESPONSIVE */
+
+@media (max-width: 27rem) {
+    .form-container {
+        max-width: 21rem;
+    }
+}
+@media (max-width: 22rem) {
+    .form-container {
+        max-width: 18rem;
+    }
+
+    .form input[name="name"] {
+        padding: .6rem 1rem;
+        margin: .5rem .2rem;     
+    }
+    .form input[name="email"] {
+        padding: .6rem 1rem;
+        margin: .5rem .2rem;   
+
+    }
+    .form textarea {
+        padding: .8rem 1rem;
+        margin: 0rem;
+        width: 14.5rem;   
+    }
+    .form button {
+     
+        margin: 2rem auto;
+        font-size: 1.1rem;
+        letter-spacing: 1.1px;
+        border-radius: 40px;
+        padding: .5rem 2.5rem;
+        
+    }
+
 }

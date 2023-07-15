@@ -103,7 +103,7 @@ sr.reveal(".about-photo", {
  
 });
 
-sr.reveal(".project", {
+sr.reveal(".project ", {
     delay: 200,
     duration: 1000,
     distance: "70px",
@@ -113,6 +113,51 @@ sr.reveal(".project", {
     viewFactor: 0.4,
  
 });
+
+
+
+//Showing more/less projects
+
+const showButton = document.getElementById("show-btn");
+
+showButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const itemsToShow = document.querySelectorAll(".showMore");
+    itemsToShow[0].style.marginTop = "-4rem";
+    itemsToShow.forEach((item) => {
+        if (item.style.display === "flex") {
+            item.style.display = "none";
+            item.style.opacity = 0;
+            item.style.visibility = "hidden";
+        } else {
+            item.style.display = "flex";
+            item.style.opacity = 1;
+            item.style.visibility = "visible";
+
+            //Animating the hidden projects when visible
+            sr.reveal(".showMore ", {
+                delay: 200,
+                duration: 1000,
+                distance: "70px",
+                interval: 400,
+                mobile: true,
+                easing: 'ease-out',
+                viewFactor: 0.4,
+             
+            });
+        }
+        
+    })
+    if(showButton.innerText === "Show more") {
+        
+        showButton.parentElement.style.marginBlock = "7rem";
+        showButton.innerText = "Show less";
+    } else {
+        showButton.parentElement.style.marginBlock = "7rem";
+        showButton.innerText = "Show more";
+
+    }
+})
 
 
 
