@@ -34,7 +34,7 @@ sr.reveal(".nav-link-wrapper", {
 sr.reveal(".name-heading", {
     delay: 200,
     duration: 1000,
-    distance: "50px",
+    distance: "30px",
     interval: 400,
     origin: "left",
     easing: 'ease-in',
@@ -44,7 +44,7 @@ sr.reveal(".name-heading", {
 sr.reveal(".main-heading", {
     delay: 300,
     duration: 1500,
-    distance: "50px",
+    distance: "30px",
     interval: 400,
     origin: "right",
     easing: 'ease-in',
@@ -53,7 +53,7 @@ sr.reveal(".main-heading", {
 sr.reveal(".my-details", {
     delay: 400,
     duration: 1100,
-    distance: "50px",
+    distance: "30px",
     interval: 400,
     origin: "left",
     easing: 'ease-in',
@@ -63,7 +63,7 @@ sr.reveal(".my-details", {
 sr.reveal(".button", {
     delay: 500,
     duration: 1100,
-    distance: "50px",
+    distance: "40px",
     interval: 400,
     origin: "right",
     easing: 'ease-in',
@@ -83,7 +83,7 @@ sr.reveal(".hero-container", {
 sr.reveal(".about-me", {
     delay: 600,
     duration: 1000,
-    distance: "70px",
+    distance: "30px",
     origin: "left",
     interval: 400,
     mobile: true,
@@ -93,8 +93,8 @@ sr.reveal(".about-me", {
 
 sr.reveal(".about-photo", {
     delay: 600,
-    duration: 1000,
-    distance: "70px",
+    duration: 1500,
+    distance: "20px",
     interval: 400,
     origin: "right",
     mobile: true,
@@ -106,7 +106,7 @@ sr.reveal(".about-photo", {
 sr.reveal(".project ", {
     delay: 200,
     duration: 1000,
-    distance: "70px",
+    distance: "40px",
     interval: 400,
     mobile: true,
     easing: 'ease-out',
@@ -148,7 +148,7 @@ showButton.addEventListener("click", (e) => {
             sr.reveal(".showMore ", {
                 delay: 200,
                 duration: 1000,
-                distance: "70px",
+                distance: "40px",
                 interval: 400,
                 mobile: true,
                 easing: 'ease-out',
