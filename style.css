@@ -813,7 +813,7 @@ body {
         max-width: 18.5rem;
     }
     .form input[name="name"] {
-        padding: .6rem 1rem;
+        padding: .6rem .8rem;
         margin: .5rem .2rem;     
     }
     .form input[name="email"] {
