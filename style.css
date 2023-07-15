@@ -645,6 +645,8 @@ body {
         font-size: 1rem;
     }
 }
+/* The elemenst that will be shown when show more is clicked */
+
 .showMore {
     display: none;
     opacity: 0;
@@ -719,11 +721,13 @@ body {
     color: var(--dark-grey);
     font-weight: 200;
     font-size: 1.5rem;
+    padding-block: .2rem;
     font-family: 'Francois One', sans-serif;
     
 }
 
 .form input[name="name"] {
+    width: 70%;
     background-color: var(--dark-grey);
     padding: .6rem 2rem;
     font-size: 1rem;
@@ -737,6 +741,7 @@ body {
 }
 
 .form input[name="email"] {
+    width: 70%;
     background-color: var(--dark-grey);
     padding: .6rem 2rem;
     font-size: 1rem;
@@ -761,6 +766,8 @@ body {
     border-radius: 2px;
     border: none; 
     font-size: 1rem;
+    width: 70%;
+    height: 7rem;
     padding: .8rem 1rem;
     margin: .5rem;
     resize: none;
@@ -803,31 +810,71 @@ body {
 }
 /* MAKING THE FORM RESPONSIVE */
 
+@media (max-width: 32rem) {
+   
+    .form input[name="name"] {
+        width: 80%;
+    }
+    .form input[name="email"] {
+        width: 80%;
+    }
+    .form textarea {
+        width: 80%; 
+    }
+}
+
 @media (max-width: 27rem) {
     .form-container {
         max-width: 21rem;
     }
+    .form input[name="name"] {
+        width: 95%;
+    }
+    .form input[name="email"] {
+        width: 95%;
+    }
+    .form textarea {
+        width: 95%; 
+    }
+    .form h3 {
+        font-size: 1.2rem;        
+    }
+
 }
-@media (max-width: 23rem) {
+
+@media (max-width: 24rem) {
     .form-container {
         max-width: 18.5rem;
     }
+
+    .form-head h3 {
+        font-size: 1.3rem;
+    }
+    .form-head p {
+        text-align: justify;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
     .form input[name="name"] {
         padding: .6rem .8rem;
-        margin: .5rem .2rem;     
+        margin: .5rem .2rem; 
+        width: 100%;   
+        
     }
     .form input[name="email"] {
         padding: .6rem 1rem;
-        margin: .5rem .2rem;   
-
+        margin: .5rem .2rem; 
+        width: 100%;   
     }
     .form textarea {
         padding: .8rem 1rem;
         margin: 0rem;
-        width: 14.5rem;   
+        width: 100%;   
+        
     }
-    .form button {
-     
+    .form button {  
         margin: 2rem auto;
         font-size: 1.1rem;
         padding: .7rem 2.5rem;
@@ -853,15 +900,15 @@ body {
     .form textarea {
         padding: .8rem 1rem;
         margin: 0rem;
-        width: 14.5rem;   
+        
     }
     .form button {
      
         margin: 2rem auto;
-        font-size: 1.1rem;
-        letter-spacing: 1.1px;
+        font-size: 1.05rem;
+        letter-spacing: 1px;
         border-radius: 40px;
-        padding: .5rem 2.5rem;
+        padding: .7rem 2rem;
         
     }
 

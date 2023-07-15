@@ -114,6 +114,16 @@ sr.reveal(".project ", {
  
 });
 
+sr.reveal(".form-container", {
+    delay: 200,
+    duration: 500,
+    distance: "20px",
+    mobile: true,
+    easing: 'linear',
+    viewFactor: 0.4,
+ 
+});
+
 
 
 //Showing more/less projects
