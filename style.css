@@ -913,3 +913,69 @@ body {
     }
 
 }
+
+/* STYLING THE FOOTER SECTION */
+.footer-section {
+    margin: 1rem;
+
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.social-icons a i {
+    border-radius: 40px;
+    margin: 1rem;
+    padding: 1rem;
+    color: var(--dark-grey);
+    background-color: #021e43;
+}
+.social-icons a i:hover {
+    color: var(--light-white);
+
+}
+.signature {
+    font-family: 'Francois One', sans-serif;
+}
+
+.signature h4 {
+    margin-block: .5rem;
+    text-align: center;
+    color: var(--dark-grey);
+    font-weight: 100;   
+}
+
+.signature h4 a {
+    text-decoration: none;
+    color: var(--main-green);
+    padding: .3rem;
+}
+.signature h4 a:hover {
+    color: var(--light-white);
+}
+.signature p {
+    color: var(--light-white);
+    font-size: 1.05rem;  
+    line-height: 1.6;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    margin-bottom: 1rem;
+}
+.signature p span {
+    color: var(--main-green);
+}
+
+@media (max-width: 25rem) {
+    .social-icons a i {
+        border-radius: 40px;
+        margin: .5rem;
+        padding: .9rem;
+        color: var(--dark-grey);
+        background-color: #021e43;
+    }
+
+
+}
